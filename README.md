@@ -1,5 +1,2 @@
 # for__test
-create it for test progect
-add some words
-also one
-test row
+create it for test project
