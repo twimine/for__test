@@ -17,6 +17,17 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button {
     font: inherit;
     text-align: center;
@@ -29,7 +40,7 @@ a {
 
 .button:hover,
 .button:focus,
-button:active {
+.button:active {
     background-color: #663d15;
 }
 
@@ -74,7 +85,7 @@ button:active {
     color: #000000;
     background-color: #f8f5f2;
     background-image: url("img/Layer3.png");
-    background-possition: 0 0;
+    background-position: 0 0;
     background-repeat: repeat;
 }
 

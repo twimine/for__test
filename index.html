@@ -9,13 +9,12 @@
 </head>
 
 <body>
-<!-- XXX: Hello world -->
 
 
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="img/index-logo.svg" width="371" height="155" alt="Парикмахерская Barbershop " Borodinski"">
+                <img src="svg/index-logo.svg" width="371" height="155" alt="Парикмахерская Barbershop " Borodinski"">
             </a>
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
@@ -33,7 +32,9 @@
     </header>
 
 
-    <main class="main-content" <h1 class="visually-hidden">Парикмахерская Barbershop "Borodinski"</h1>
+    <main class="main-content">
+
+        <h1 class="visually-hidden">Парикмахерская Barbershop "Borodinski"</h1>
 
 
         <section class="advantages">
@@ -107,7 +108,25 @@
             <h2>Записаться</h2>
             <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
                 С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-            <!-- Form will be here -->
+            <form class="appointment-form" action="registrations.html" method="post">
+                <p>
+                    <label for="appointment-data">Дата</label>
+                    <input id="appointment-data" type="text" name="time" value="" placeholder="11.12.2018">
+                </p>
+                <p>
+                    <label for="appointment-time">Время</label>
+                    <input id="appointment-time" type="text" name="time" value="" placeholder="09:00">
+                </p>
+                <p>
+                    <label for="appointment-name">Ваше имя</label>
+                    <input id="appointment-name" type="text" name="time" value="" placeholder="Усы">
+                </p>
+                <p>
+                    <label for="appointment-telefone">Телефон</label>
+                    <input id="appointment-telefone" type="text" name="time" value="" placeholder="+7 123 45-67-89">
+                </p>
+                <button class="button" type="submit" name="button">Отправить</button>
+            </form>
         </section>
 
 
@@ -135,7 +154,22 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <!-- Form will be here -->
+            <form class="login-form" action="login-form.html" method="post">
+                <p>
+                    <label for="user-login" class="visually-hidden"></label>
+                    <input id="user-login" class="login-icon-login" type="text" name="login" value="" placeholder="Логин">
+                </p>
+                <p>
+                    <label for="user-password" class="visually-hidden"></label>
+                    <input id="user-password" class="login-icon-password" type="password" name="password" value="" placeholder="Пароль">
+                </p>
+                <p class="login-password-info">
+                    <input id="remember-me" class="visually-hidden" type="checkbox" name="remember" value="">
+                    <label for="remember-me" class="login-checkbox">Запомните меня</label>
+                    <a class="restore" href="restore.html">Я забыл пароль!</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
         <span class="modal-close">Закрыть</span>
     </section>
     <section class="modal-map">
