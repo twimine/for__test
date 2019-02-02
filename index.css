@@ -1,12 +1,15 @@
 body {
+    min-width: 960px;
     margin: 0;
     padding: 0;
+
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
+
     background-color: #000000;
     background-image: url("img/Layer1.png");
     background-position: top center;
@@ -15,7 +18,6 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 ul {
@@ -23,13 +25,20 @@ ul {
   padding: 0;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
+
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -106,8 +115,6 @@ ul {
 
 .site-navigation {
     width: 620px;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -155,6 +162,7 @@ ul {
     display: block;
     padding: 25px 20px;
 
+    vertical-align: middle;
     color: #ffffff;
 }
 
@@ -371,19 +379,24 @@ ul {
 .footer-social ul {
     list-style: none;
     display: flex;
-    width: 140px;
+    width: 141px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.social-button {
+.social-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 43px;
     height: 43px;
+
+    background-color: #000000;
 }
 
 .footer-copyright {
-    width: 140px;
+    width: 150px;
     margin: 0px;
     margin-left: auto;
+    text-align: center;
 }
